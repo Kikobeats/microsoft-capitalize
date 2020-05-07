@@ -25,9 +25,6 @@
     "title",
     "titleize"
   ],
-  "dependencies": {
-    "lodash": "~4.17.15"
-  },
   "devDependencies": {
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
