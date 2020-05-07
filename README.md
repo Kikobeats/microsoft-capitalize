@@ -9,8 +9,7 @@
 ![Last version](https://img.shields.io/github/tag/Kikobeats/microsoft-capitalize.svg?style=flat-square)
 [![Build Status](https://img.shields.io/travis/com/Kikobeats/microsoft-capitalize/master.svg?style=flat-square)](https://travis-ci.com/Kikobeats/microsoft-capitalize)
 [![Coverage Status](https://img.shields.io/coveralls/Kikobeats/microsoft-capitalize.svg?style=flat-square)](https://coveralls.io/github/Kikobeats/microsoft-capitalize)
-[![Dependency status](https://img.shields.io/david/Kikobeats/microsoft-capitalize.svg?style=flat-square)](https://david-dm.org/Kikobeats/microsoft-capitalize)
-[![Dev Dependencies Status](https://img.shields.io/david/dev/Kikobeats/microsoft-capitalize.svg?style=flat-square)](https://david-dm.org/Kikobeats/microsoft-capitalize#info=devDependencies)
+[![Bundlephobia](https://badgen.net/bundlephobia/minzip/microsoft-capitalize?style=flat-square)](https://bundlephobia.com/result?p=microsoft-capitalize)
 [![NPM Status](https://img.shields.io/npm/dm/microsoft-capitalize.svg?style=flat-square)](https://www.npmjs.org/package/microsoft-capitalize)
 
 > Sentence-style capitalization in titles and headings based on [Microsoft Styleguide](https://docs.microsoft.com/en-us/style-guide/capitalization).
