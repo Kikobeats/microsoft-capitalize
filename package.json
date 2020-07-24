@@ -2,7 +2,7 @@
   "name": "microsoft-capitalize",
   "description": "Sentence-style capitalization in titles and headings based on Microsoft Styleguide",
   "homepage": "https://nicedoc.io/Kikobeats/microsoft-capitalize",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "src/index.js",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
