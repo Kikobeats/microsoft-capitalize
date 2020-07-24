@@ -8,7 +8,11 @@ const isUpperCaseWord = str =>
 
 module.exports = (str, exceptions = []) => {
   // all minus unless the first world
-  let title = capitalize(str)
+  let title = str
+    .split('.')
+    .map(str => capitalize(str.trim()))
+    .join('. ')
+    .trim()
 
   // respect special words
   exceptions.forEach(word => {

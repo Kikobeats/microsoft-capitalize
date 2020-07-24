@@ -28,3 +28,15 @@ test('be possible omit words', t => {
     'Open Graph, JSON+LD & oEmbed'
   )
 })
+
+test('capitalize after dot', t => {
+  t.is(
+    capitalize("your next computer. it isn't a computer."),
+    "Your next computer. It isn't a computer."
+  )
+
+  t.is(
+    capitalize("your next computer.it isn't a computer."),
+    "Your next computer. It isn't a computer."
+  )
+})
