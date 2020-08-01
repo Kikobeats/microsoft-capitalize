@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.3](https://github.com/Kikobeats/microsoft-capitalize/compare/v1.0.2...v1.0.3) (2020-08-01)
+
+
+### Bug Fixes
+
+* ensure first word is capitalized ([18b9eef](https://github.com/Kikobeats/microsoft-capitalize/commit/18b9eef4eac0faa5d714d89446da27e2f2375357))
+
 ### [1.0.2](https://github.com/Kikobeats/microsoft-capitalize/compare/v1.0.1...v1.0.2) (2020-07-24)
 
 
