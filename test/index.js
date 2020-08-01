@@ -10,6 +10,11 @@ test('capitalize only the first world', t => {
     capitalize('Microlink CDN: Global Edge Cache'),
     'Microlink CDN: Global edge cache'
   )
+
+  t.is(
+    capitalize('Cache saves your API quota', ['cache']),
+    'Cache saves your API quota'
+  )
 })
 
 test('respect uppercase words intentionally', t => {

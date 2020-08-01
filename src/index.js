@@ -1,7 +1,12 @@
 'use strict'
 
-const capitalize = str =>
-  str.charAt(0).toUpperCase() + str.slice(1).toLowerCase()
+const head = str => str.charAt(0)
+
+const tail = str => str.slice(1)
+
+const upperHead = str => head(str).toUpperCase()
+
+const capitalize = str => upperHead(str) + tail(str).toLowerCase()
 
 const isUpperCaseWord = str =>
   str.split('').every(letter => letter === letter.toUpperCase())
@@ -15,12 +20,17 @@ module.exports = (str, exceptions = []) => {
     .trim()
 
   // respect special words
-  exceptions.forEach(word => {
-    const re = new RegExp(`\\b(?:${word})\\b`, 'gi')
-    if (re.test(str)) {
-      title = title.replace(re, word)
-    }
-  })
+  if (exceptions.length) {
+    exceptions.forEach(word => {
+      const re = new RegExp(`\\b(?:${word})\\b`, 'gi')
+      if (re.test(str)) {
+        title = title.replace(re, word)
+      }
+    })
+
+    // still be sure first word is capitalized even it's an exception
+    title = upperHead(title) + tail(title)
+  }
 
   // respect uppercase words
   title = title.split(' ')
