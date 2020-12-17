@@ -22,6 +22,10 @@ test('respect uppercase words intentionally', t => {
   t.is(capitalize('Turns any URL into data'), 'Turns any URL into data')
 })
 
+test('respect dots', t => {
+  t.is(capitalize('Autopilot 2.5'), 'Autopilot 2.5')
+})
+
 test('be possible omit words', t => {
   t.is(capitalize('JSON+LD & oEmbed', ['oEmbed']), 'JSON+LD & oEmbed')
   t.is(

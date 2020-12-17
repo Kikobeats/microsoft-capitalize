@@ -14,7 +14,7 @@ const isUpperCaseWord = str =>
 module.exports = (str, exceptions = []) => {
   // all minus unless the first world
   let title = str
-    .split('.')
+    .split(/\.(?![\d])/)
     .map(str => capitalize(str.trim()))
     .join('. ')
     .trim()
