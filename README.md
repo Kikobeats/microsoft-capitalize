@@ -32,6 +32,10 @@ const capitalize = require('microsoft-capitalize')
 capitalize('Microlink CDN: Global Edge Cache')
 // => 'Microlink CDN: Global edge cache'
 
+// handling dot corner cases
+capitalize('autopilot 2.5')
+// => 'Autopilot 2.5'
+
 // passing exceptions
 capitalize('JSON+LD & oEmbed', ['oEmbed'])
 // => 'JSON+LD & oEmbed'
