@@ -7,7 +7,6 @@
 </p>
 
 ![Last version](https://img.shields.io/github/tag/Kikobeats/microsoft-capitalize.svg?style=flat-square)
-[![Build Status](https://img.shields.io/travis/com/Kikobeats/microsoft-capitalize/master.svg?style=flat-square)](https://travis-ci.com/Kikobeats/microsoft-capitalize)
 [![Coverage Status](https://img.shields.io/coveralls/Kikobeats/microsoft-capitalize.svg?style=flat-square)](https://coveralls.io/github/Kikobeats/microsoft-capitalize)
 [![Bundlephobia](https://badgen.net/bundlephobia/minzip/microsoft-capitalize?style=flat-square)](https://bundlephobia.com/result?p=microsoft-capitalize)
 [![NPM Status](https://img.shields.io/npm/dm/microsoft-capitalize.svg?style=flat-square)](https://www.npmjs.org/package/microsoft-capitalize)
