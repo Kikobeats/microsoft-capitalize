@@ -1,3 +1,10 @@
+## <small>1.0.6 (2026-01-08)</small>
+
+* build: contributors ([ef51020](https://github.com/Kikobeats/microsoft-capitalize/commit/ef51020))
+* chore: add automate release ([612a1a7](https://github.com/Kikobeats/microsoft-capitalize/commit/612a1a7))
+
+
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
