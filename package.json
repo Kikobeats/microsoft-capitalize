@@ -38,7 +38,6 @@
     "git-dirty": "latest",
     "github-generate-release": "latest",
     "nano-staged": "latest",
-
     "nyc": "latest",
     "simple-git-hooks": "latest",
     "standard": "latest",
