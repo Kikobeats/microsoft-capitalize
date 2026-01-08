@@ -49,3 +49,45 @@ test('capitalize after dot', t => {
     "Your next computer. It isn't a computer."
   )
 })
+
+test('respect exceptions with dots', t => {
+  t.is(
+    capitalize('unavatar.io is now GA', ['unavatar.io', 'GA']),
+    'unavatar.io is now GA'
+  )
+  t.is(
+    capitalize('using Node.js with package.json'),
+    'Using Node.js with package.json'
+  )
+})
+
+test('respect exceptions after colon', t => {
+  t.is(
+    capitalize('Microlink: unavatar.io is GA', ['unavatar.io', 'GA']),
+    'Microlink: unavatar.io is GA'
+  )
+})
+
+test('keep original casing for exceptions at start', t => {
+  t.is(capitalize('unavatar.io', ['unavatar.io']), 'unavatar.io')
+  t.is(capitalize('Cache', ['cache']), 'Cache')
+  t.is(capitalize('cache', ['cache']), 'cache')
+})
+
+test('auto-detect domains', t => {
+  t.is(capitalize('unavatar.io is now GA', ['GA']), 'unavatar.io is now GA')
+  t.is(capitalize('microlink.io is the best'), 'microlink.io is the best')
+  t.is(capitalize('Visit google.com today'), 'Visit google.com today')
+})
+
+test('distinguish domains from sentence breaks (COMMON_WORDS)', t => {
+  // .it is in COMMON_WORDS, so it's treated as a sentence break and capitalized
+  t.is(
+    capitalize("your next computer.it isn't a computer."),
+    "Your next computer. It isn't a computer."
+  )
+  // .io is NOT in COMMON_WORDS, so it's treated as a domain and preserved
+  t.is(capitalize('microlink.io is cool'), 'microlink.io is cool')
+  // .ai is NOT in COMMON_WORDS, so it's treated as a domain and preserved
+  t.is(capitalize('built with fetch.ai'), 'Built with fetch.ai')
+})
