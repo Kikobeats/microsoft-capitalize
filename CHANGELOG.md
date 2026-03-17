@@ -1,3 +1,4 @@
+## 1.0.7 (2026-03-17)
 ## <small>1.0.6 (2026-01-08)</small>
 
 * build: contributors ([ef51020](https://github.com/Kikobeats/microsoft-capitalize/commit/ef51020))
