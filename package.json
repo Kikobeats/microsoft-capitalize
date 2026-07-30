@@ -1,6 +1,6 @@
 {
   "name": "microsoft-capitalize",
-  "description": "Sentence-style capitalization in titles and headings based on Microsoft Styleguide",
+  "description": "Apply Microsoft styleguide sentence-style capitalization to titles and headings.",
   "homepage": "https://github.com/Kikobeats/microsoft-capitalize",
   "version": "1.0.8",
   "main": "src/index.js",
@@ -20,9 +20,12 @@
   "keywords": [
     "capitalization",
     "capitalize",
+    "heading",
     "microsoft",
+    "sentence-case",
     "style",
     "styleguide",
+    "text",
     "title",
     "titleize"
   ],
@@ -76,6 +79,7 @@
   },
   "nano-staged": {
     "*.js": [
+      "npx @kikobeats/prettier-standard",
       "standard --fix"
     ],
     "package.json": [
